@@ -1,0 +1,84 @@
+body {
+  font-family: 'Noto Sans KR', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container aside {
+  width: 300px;
+  position: fixed;
+  top: 30px;
+}
+
+.container aside::after {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  border-right: 1px solid #999;
+}
+
+.container .post {
+  width: calc(100% - 300px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 30px;
+}
+
+.post h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+h2.blog-title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+img.blog-logo {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+aside nav>ul>li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #333;
+}
+
+.post-content {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.post-content p {
+  margin-bottom: 0.8em;
+}
+
+
+ul.post-list>li {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.post-list>li>a {
+  font-size: 2.5rem;
+  color: #333;
+}
